@@ -1,0 +1,32 @@
+.signup-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e0f2fe;
+}
+
+.signup-box {
+  background: white;
+  padding: 50px;
+  border-radius: 20px;
+  width: 400px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.signup-box input {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.signup-box button {
+  padding: 15px;
+  background: #0f172a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}

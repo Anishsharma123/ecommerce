@@ -1,0 +1,32 @@
+.product-details {
+  display: flex;
+  gap: 50px;
+  padding: 50px;
+}
+
+.product-image {
+  flex: 1;
+  height: 500px;
+  background: #d1d5db;
+  border-radius: 20px;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.price {
+  font-size: 28px;
+  color: #2563eb;
+  margin: 20px 0;
+}
+
+.product-info button {
+  padding: 15px 30px;
+  border: none;
+  background: black;
+  color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}

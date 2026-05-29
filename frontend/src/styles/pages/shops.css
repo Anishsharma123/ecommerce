@@ -1,0 +1,50 @@
+.shops-page {
+  padding: 50px;
+}
+
+.shops-page h1 {
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+.shops-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.shop-card {
+  background: #f3f4f6;
+  padding: 20px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.shop-card:hover {
+  transform: translateY(-5px);
+}
+
+.shop-image {
+  height: 250px;
+  background: #cbd5e1;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.shop-card h2 {
+  margin-bottom: 10px;
+}
+
+.shop-card p {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.shop-card button {
+  padding: 12px 25px;
+  border: none;
+  background: #111827;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}

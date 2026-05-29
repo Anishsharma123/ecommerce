@@ -1,0 +1,17 @@
+.products-page {
+  padding: 50px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.product-box {
+  background: #e5e7eb;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
