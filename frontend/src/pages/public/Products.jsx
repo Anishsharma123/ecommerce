@@ -1,12 +1,8 @@
-import Navbar from "../../components/common/Navbar";
-import Footer from "../../components/common/Footer";
-
 import "../../styles/pages/products.css";
 
 function Products() {
   return (
     <>
-      <Navbar />
 
       <div className="products-page">
         <h1>All Products</h1>
@@ -19,7 +15,6 @@ function Products() {
         </div>
       </div>
 
-      <Footer />
     </>
   );
 }

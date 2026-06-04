@@ -1,12 +1,8 @@
-import Navbar from "../../components/common/Navbar";
-import Footer from "../../components/common/Footer";
-
 import "../../styles/pages/productDetails.css";
 
 function ProductDetails() {
   return (
     <>
-      <Navbar />
 
       <div className="product-details">
         <div className="product-image"></div>
@@ -24,7 +20,6 @@ function ProductDetails() {
         </div>
       </div>
 
-      <Footer />
     </>
   );
 }

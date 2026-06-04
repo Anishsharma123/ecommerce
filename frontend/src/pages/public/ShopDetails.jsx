@@ -1,12 +1,8 @@
-import Navbar from "../../components/common/Navbar";
-import Footer from "../../components/common/Footer";
-
 import "../../styles/pages/shopDetails.css";
 
 function ShopDetails() {
   return (
     <>
-      <Navbar />
 
       <div className="shop-details-page">
 
@@ -59,7 +55,6 @@ function ShopDetails() {
 
       </div>
 
-      <Footer />
     </>
   );
 }

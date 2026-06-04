@@ -1,12 +1,8 @@
-import Navbar from "../../components/common/Navbar";
-import Footer from "../../components/common/Footer";
-
 import "../../styles/pages/home.css";
 
 function Home() {
   return (
     <>
-      <Navbar />
 
       <div className="hero">
         <h1>Discover Amazing Products</h1>
@@ -25,7 +21,6 @@ function Home() {
         </div>
       </section>
 
-      <Footer />
     </>
   );
 }

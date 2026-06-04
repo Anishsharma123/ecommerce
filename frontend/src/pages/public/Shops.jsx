@@ -1,12 +1,8 @@
-import Navbar from "../../components/common/Navbar";
-import Footer from "../../components/common/Footer";
-
 import "../../styles/pages/shops.css";
 
 function Shops() {
   return (
     <>
-      <Navbar />
 
       <div className="shops-page">
         <h1>Explore Shops</h1>
@@ -44,7 +40,6 @@ function Shops() {
         </div>
       </div>
 
-      <Footer />
     </>
   );
 }
