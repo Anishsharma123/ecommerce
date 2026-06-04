@@ -1,0 +1,20 @@
+import "../../styles/components/input.css";
+
+function Input({
+  type = "text",
+  placeholder,
+  value,
+  onChange,
+}) {
+  return (
+    <input
+      className="custom-input"
+      type={type}
+      placeholder={placeholder}
+      value={value}
+      onChange={onChange}
+    />
+  );
+}
+
+export default Input;
