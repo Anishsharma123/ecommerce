@@ -1,21 +1,24 @@
-import "../../styles/pages/products.css";
+import products from "../../data/products";
+
+import Container from "../../components/ui/Container";
+import SectionTitle from "../../components/ui/SectionTitle";
+
+import ProductGrid from "../../components/product/ProductGrid";
 
 function Products() {
   return (
-    <>
+    <Container>
 
-      <div className="products-page">
-        <h1>All Products</h1>
+      <SectionTitle
+        title="All Products"
+        subtitle="Explore products from all shops"
+      />
 
-        <div className="products-grid">
-          <div className="product-box">Product 1</div>
-          <div className="product-box">Product 2</div>
-          <div className="product-box">Product 3</div>
-          <div className="product-box">Product 4</div>
-        </div>
-      </div>
+      <ProductGrid
+        products={products}
+      />
 
-    </>
+    </Container>
   );
 }
 

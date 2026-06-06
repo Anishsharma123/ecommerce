@@ -1,7 +1,7 @@
 import "../../styles/components/button.css";
 
 function Button({
-  children,
+  children,  //Display whatever is written between opening and closing Button tags
   onClick,
   type = "button",
   variant = "primary",

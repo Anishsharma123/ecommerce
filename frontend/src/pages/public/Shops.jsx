@@ -1,46 +1,22 @@
-import "../../styles/pages/shops.css";
+import Container from "../../components/ui/Container";
+import SectionTitle from "../../components/ui/SectionTitle";
+
+import ShopGrid from "../../components/shop/ShopGrid";
+
+import shops from "../../data/shops";
 
 function Shops() {
   return (
-    <>
+    <Container>
 
-      <div className="shops-page">
-        <h1>Explore Shops</h1>
+      <SectionTitle
+        title="Explore Shops"
+        subtitle="Discover trusted vendors"
+      />
 
-        <div className="shops-grid">
-          <div className="shop-card">
-            <div className="shop-image"></div>
+      <ShopGrid shops={shops} />
 
-            <h2>Tech World</h2>
-
-            <p>Electronics & Gadgets</p>
-
-            <button>Visit Shop</button>
-          </div>
-
-          <div className="shop-card">
-            <div className="shop-image"></div>
-
-            <h2>Fashion Hub</h2>
-
-            <p>Clothing & Accessories</p>
-
-            <button>Visit Shop</button>
-          </div>
-
-          <div className="shop-card">
-            <div className="shop-image"></div>
-
-            <h2>Home Essentials</h2>
-
-            <p>Furniture & Decor</p>
-
-            <button>Visit Shop</button>
-          </div>
-        </div>
-      </div>
-
-    </>
+    </Container>
   );
 }
 

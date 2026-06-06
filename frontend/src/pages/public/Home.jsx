@@ -1,57 +1,54 @@
-// import "../../styles/pages/home.css";
+import "../../styles/pages/home.css";
+import products from "../../data/products";
 
-// function Home() {
-//   return (
-//     <>
-
-//       <div className="hero">
-//         <h1>Discover Amazing Products</h1>
-//         <p>Shop from trusted vendors with community reviews.</p>
-
-//         <button>Explore Products</button>
-//       </div>
-
-//       <section className="featured-section">
-//         <h2>Featured Products</h2>
-
-//         <div className="product-grid">
-//           <div className="product-card">Product 1</div>
-//           <div className="product-card">Product 2</div>
-//           <div className="product-card">Product 3</div>
-//         </div>
-//       </section>
-
-//     </>
-//   );
-// }
-
-// export default Home;
-
-import Button from "../../components/ui/Button";
-import Card from "../../components/ui/Card";
 import Container from "../../components/ui/Container";
 import SectionTitle from "../../components/ui/SectionTitle";
 
+import ProductGrid from "../../components/product/ProductGrid";
 function Home() {
   return (
-    <Container>
+    <>
+      <div className="hero">
+        <h1>Discover Amazing Products</h1>
+        <p>Shop from trusted vendors with community reviews.</p>
+
+        <button>Explore Products</button>
+      </div>
 
       <SectionTitle
         title="Featured Products"
-        subtitle="Explore our latest products"
+        subtitle="Trending products this week"
       />
 
-      <Card>
-        <h3>Gaming Mouse</h3>
-        <p>₹1999</p>
-
-        <Button>
-          Add To Cart
-        </Button>
-      </Card>
-
-    </Container>
+      <ProductGrid products={products.slice(0, 3)} />
+    </>
   );
 }
 
 export default Home;
+
+// import products from "../../data/products";
+
+// import Container from "../../components/ui/Container";
+// import SectionTitle from "../../components/ui/SectionTitle";
+
+// import ProductGrid from "../../components/product/ProductGrid";
+
+// function Home() {
+//   return (
+//     <Container>
+
+//       <SectionTitle
+//         title="Featured Products"
+//         subtitle="Trending products this week"
+//       />
+
+//       <ProductGrid
+//         products={products.slice(0, 3)}
+//       />
+
+//     </Container>
+//   );
+// }
+
+// export default Home;
